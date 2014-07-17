@@ -1,9 +1,11 @@
 package org.raowei.test.factorymethodpattern;
 
+
 public class NvWa {
 	public static void main(String[] args) {
 		
 		BaGuaLu baGuaLu = BaGuaLu.getInstance();
+		/*
 		System.out.println("----------------造出白人--------------");
 		Human whitehHuman = baGuaLu.createHuman(WhiteMan.class);
 		whitehHuman.cry();
@@ -21,6 +23,15 @@ public class NvWa {
 		yellowHuman.cry();
 		yellowHuman.laugh();
 		yellowHuman.talk();
+		*/
+		
+		for (int i = 0; i < 100; i++) {
+			System.out.println("----------随机产生人类-------------");
+			Human human = baGuaLu.createHuman();
+			human.cry();
+			human.laugh();
+			human.talk();
+		}
 		
 	}
 }
