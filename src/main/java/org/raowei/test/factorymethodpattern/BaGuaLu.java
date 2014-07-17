@@ -10,7 +10,7 @@ public class BaGuaLu {
 		return baGuaLu;
 	}
 	
-	public Human createHuman(Class c){
+	public Human createHuman(Class<?> c){
 		Human human = null;
 		try {
 			human = (Human) Class.forName(c.getName()).newInstance();
