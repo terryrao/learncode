@@ -12,7 +12,7 @@ public class Emperor {
 	
 	static {
 		for(int i = 0 ; i < maxNumEmperor; i++) {
-			emperors.add(new Emperor("»ÊµÛ" + i));
+			emperors.add(new Emperor("çš‡å¸" + i));
 		}
 	}
 	

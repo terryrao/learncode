@@ -4,17 +4,17 @@ public class Zhaoyun {
 	public static void main(String[] args) {
 		Content content;
 		
-		System.out.println("==============µÚÒ»¸ö============");
+		System.out.println("==============ç¬¬ä¸€ä¸ª============");
 		content = new Content(new BackDoor());
 		content.operator();
 		System.out.println("\n\n\n");
 		
-		System.out.println("=======µÚ¶þ¸ö");
+		System.out.println("=======ç¬¬äºŒä¸ª");
 		content = new Content(new GivenGreenLight());
 		content.operator();
 		System.out.println("\n\n");
 		
-		System.out.println("============µÚÈý¸ö===========");
+		System.out.println("============ç¬¬ä¸‰ä¸ª===========");
 		content = new Content(new BlockEnemy());
 		content.operator();
 	}

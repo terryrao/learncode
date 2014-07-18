@@ -1,7 +1,7 @@
 package org.raowei.test.factorymethodpattern;
 
 /**
- * 工厂模式产品定义接口
+ * 宸ュ巶妯″紡浜у搧瀹氫箟鎺ュ彛
  * @author terryrao
  *
  */

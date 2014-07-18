@@ -10,7 +10,7 @@ import java.util.List;
 public class ClassUtils {
 
 	/**
-	 * »ñµÃÍ¬Ò»°üÖĞÓĞµÄinterface µÄËùÓĞÊµÏÖÀà
+	 * è·å¾—åŒä¸€åŒ…ä¸­æœ‰çš„interface çš„æ‰€æœ‰å®ç°ç±»
 	 * 
 	 * @param c
 	 * @return
@@ -21,7 +21,7 @@ public class ClassUtils {
 		List<Class<?>> allClasses = null;;
 
 		if (c.isInterface()) {
-			//»ñµÃ¸Ã°ü¼°¸Ã°üÏÂËùÓĞµÄ×ÓÀà
+			//è·å¾—è¯¥åŒ…åŠè¯¥åŒ…ä¸‹æ‰€æœ‰çš„å­ç±»
 			try {
 				allClasses = getClasses(packageName);
 			} catch (ClassNotFoundException e) {
@@ -29,7 +29,7 @@ public class ClassUtils {
 			} catch (IOException e) {
 				e.printStackTrace();
 			}
-			 //ÅĞ¶ÏÊÇ²»ÊÇÍ¬Ò»¸ö½Ó¿Ú
+			 //åˆ¤æ–­æ˜¯ä¸æ˜¯åŒä¸€ä¸ªæ¥å£
 			 for (int i = 0; i < allClasses.size(); i++) {
 				 if (c.isAssignableFrom(allClasses.get(i))) {
 					list.add(allClasses.get(i));

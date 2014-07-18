@@ -1,10 +1,10 @@
 package org.raowei.test.singletonpattern;
 
 public class Emperor {
-	//³ÖÓĞ×Ô¼ºµÄÊµÀı
+	//æŒæœ‰è‡ªå·±çš„å®ä¾‹
 	private static Emperor emperor = null;
 	
-	// Ë½ÓĞ»¯¹¹ÔìÆ÷
+	// ç§æœ‰åŒ–æ„é€ å™¨
 	private Emperor(){
 		
 	}
@@ -17,7 +17,7 @@ public class Emperor {
 	}
 	
 	public  void emperorInfo(){
-		System.out.println("ÎÒ¾ÍÊÇÄ³Ä³Ä³");
+		System.out.println("æˆ‘å°±æ˜¯æŸæŸæŸ");
 	}
 	
 }

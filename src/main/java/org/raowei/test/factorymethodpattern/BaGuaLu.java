@@ -32,13 +32,13 @@ public class BaGuaLu {
 			}
 			
 		} catch (InstantiationException e) {
-			System.out.println("必须指定人种颜色");
+			System.out.println("蹇呴』鎸囧畾浜虹棰滆壊");
 			e.printStackTrace();
 		} catch (IllegalAccessException e) {
-			System.out.println("人种定义错误");
+			System.out.println("浜虹瀹氫箟閿欒");
 			e.printStackTrace();
 		} catch (ClassNotFoundException e) {
-			System.out.println("混蛋，你指定的人种不存在");
+			System.out.println("娣疯泲锛屼綘鎸囧畾鐨勪汉绉嶄笉瀛樺湪");
 			e.printStackTrace();
 		}
 		return human;
