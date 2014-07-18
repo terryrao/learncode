@@ -3,16 +3,16 @@ package org.raowei.test.factorymethodpattern;
 public class YellowMan implements Human{
 
 	public void laugh() {
-		System.out.println("»ÆÖÖÈË»áĞ¦");
+		System.out.println("é»„ç§äººä¼šç¬‘");
 		
 	}
 
 	public void cry() {
-		System.out.println("»ÆÖÖÈË»á¿Ş");
+		System.out.println("é»„ç§äººä¼šå“­");
 	}
 
 	public void talk() {
-		System.out.println("»ÆÖÖÈË»áËµ»°");
+		System.out.println("é»„ç§äººä¼šè¯´è¯");
 	}
 	
 }

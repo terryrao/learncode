@@ -3,15 +3,15 @@ package org.raowei.test.factorymethodpattern;
 public class WhiteMan implements Human{
 
 	public void laugh() {
-		System.out.println("°×ÖÖÈË»áĞ¦");
+		System.out.println("ç™½ç§äººä¼šç¬‘");
 	}
 
 	public void cry() {
-		System.out.println("°×ÖÖÈË»á¿Ş");
+		System.out.println("ç™½ç§äººä¼šå“­");
 	}
 
 	public void talk() {
-		System.out.println("°×ÖÖÈË»áËµ»°");
+		System.out.println("ç™½ç§äººä¼šè¯´è¯");
 	}
 
 }

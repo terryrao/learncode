@@ -4,7 +4,7 @@ public class GivenGreenLight implements IStrategy{
 
 	public void operate() {
 
-			System.out.println("ÇóÎâÌ«¹ú¿ª¸öÂÌµÆ");
+			System.out.println("æ±‚å´å¤ªå›½å¼€ä¸ªç»¿ç¯");
 	}
 	
 }

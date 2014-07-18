@@ -4,11 +4,11 @@ public class PanJinLian implements KindWomen{
 
 	public void makeEyeWithMan() {
 
-		System.out.println("ÅË½ğÁ«Å×ÃÄÑÛ");
+		System.out.println("æ½˜é‡‘è²æŠ›åªšçœ¼");
 	}
 
 	public void happyWithMan() {
-		System.out.println("ÅË½ğÁ«È¡ÔÃÓÚÄĞÈË");
+		System.out.println("æ½˜é‡‘è²å–æ‚¦äºç”·äºº");
 	}
 
 }

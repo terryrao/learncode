@@ -9,7 +9,7 @@ public class ClassUtilsTest {
 
 	@Test
 	public void test() {
-		Class c = Human.class;
+		Class<?> c = Human.class;
 		String packageName = c.getPackage().getName();
 		System.out.println(packageName);
 		fail("Not yet implemented");

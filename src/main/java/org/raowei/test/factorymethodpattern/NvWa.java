@@ -6,19 +6,19 @@ public class NvWa {
 		
 		BaGuaLu baGuaLu = BaGuaLu.getInstance();
 		/*
-		System.out.println("----------------Ôì³ö°×ÈË--------------");
+		System.out.println("----------------é€ å‡ºç™½äºº--------------");
 		Human whitehHuman = baGuaLu.createHuman(WhiteMan.class);
 		whitehHuman.cry();
 		whitehHuman.laugh();
 		whitehHuman.talk();
 		
-		System.out.println("----------------Ôì³öºÚÈË--------------");
+		System.out.println("----------------é€ å‡ºé»‘äºº--------------");
 		Human blackHuman = baGuaLu.createHuman(BlackMan.class);
 		blackHuman.cry();
 		blackHuman.laugh();
 		blackHuman.talk();
 		
-		System.out.println("----------------Ôì³ö»ÆÖÖÈË--------------");
+		System.out.println("----------------é€ å‡ºé»„ç§äºº--------------");
 		Human yellowHuman = baGuaLu.createHuman(YellowMan.class);
 		yellowHuman.cry();
 		yellowHuman.laugh();
@@ -26,7 +26,7 @@ public class NvWa {
 		*/
 		
 		for (int i = 0; i < 100; i++) {
-			System.out.println("----------Ëæ»ú²úÉúÈËÀà-------------");
+			System.out.println("----------éšæœºäº§ç”Ÿäººç±»-------------");
 			Human human = baGuaLu.createHuman();
 			human.cry();
 			human.laugh();
