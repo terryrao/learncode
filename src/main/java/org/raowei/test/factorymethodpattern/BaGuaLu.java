@@ -5,10 +5,12 @@ import java.util.List;
 import java.util.Map;
 import java.util.Random;
 
+import org.raowei.test.annotaionprocessor.annotaions.Version;
 import org.raowei.test.util.ClassUtils;
 
 
 
+@Version(major = -1,minor = -2)
 public class BaGuaLu {
 	private static BaGuaLu baGuaLu = new BaGuaLu();
 	private static Map<String, Human> humans = new HashMap<String, Human> ();
