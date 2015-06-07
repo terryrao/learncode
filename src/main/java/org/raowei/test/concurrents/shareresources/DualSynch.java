@@ -15,24 +15,21 @@
 
 package org.raowei.test.concurrents.shareresources;
 
-import sun.applet.Main;
-
 /**
  * @author terryrao
  * @version 1.0 6/7/2015 9:16 PM
  */
 public class DualSynch {
-    private Object dualObject = new Object();
+    private Object syncObject = new Object();
     public synchronized void f() {
-        for (int i = 0; i < 5; i++) {
+        for(int i = 0; i < 5; i++) {
             System.out.println("f()");
             Thread.yield();
         }
     }
-
     public void g() {
-        synchronized (dualObject) {
-            for (int i = 0; i < 5; i++) {
+        synchronized(syncObject) {
+            for(int i = 0; i < 5; i++) {
                 System.out.println("g()");
                 Thread.yield();
             }
@@ -40,18 +37,12 @@ public class DualSynch {
     }
 
     public static void main (String [] args) {
-        DualSynch dualSynch = new DualSynch();
-//        new Thread(new Runnable() {
-//            @Override
-//            public void run() {
-//                dualSynch.f();
-//            }
-//        }).start();
-        new Thread(){
+        final DualSynch ds = new DualSynch();
+        new Thread() {
             public void run() {
-                dualSynch.f();
+                ds.f();
             }
         }.start();
-        dualSynch.g();
+        ds.g();
     }
 }
