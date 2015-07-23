@@ -8,7 +8,7 @@ import java.lang.annotation.Target;
 /**
  * Created by terryrao on 5/24/2015.
  */
-@Target({ElementType.METHOD})
+@Target({ElementType.TYPE})
 @Retention(RetentionPolicy.RUNTIME)
 public @interface Test {
 
