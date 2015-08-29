@@ -15,8 +15,6 @@
 
 package org.raowei.test.java8test.functional;
 
-import com.sun.tools.javac.jvm.Gen;
-
 import java.time.LocalDate;
 import java.util.ArrayList;
 import java.util.List;

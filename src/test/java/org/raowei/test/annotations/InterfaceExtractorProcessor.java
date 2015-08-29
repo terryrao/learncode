@@ -15,11 +15,10 @@
 
 package org.raowei.test.annotations;
 
-import com.sun.tools.internal.ws.processor.modeler.annotation.AnnotationProcessorContext;
 
 /**
  * @author terryrao
  * @version 1.0 6/7/2015 10:07 AM
  */
-public class InterfaceExtractorProcessor extends AnnotationProcessorContext {
+public class InterfaceExtractorProcessor {
 }
