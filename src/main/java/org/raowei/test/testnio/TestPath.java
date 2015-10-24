@@ -2,7 +2,6 @@ package org.raowei.test.testnio;
 
 import com.raowei.util.StringUtils;
 
-import java.io.IOException;
 import java.nio.file.FileSystems;
 import java.nio.file.Path;
 import java.nio.file.Paths;
@@ -25,7 +24,7 @@ public class TestPath {
 
 
     public  static void main(String args[]) {
-        Path path = getPath("./test.text",null);
+      /*  Path path = getPath("./test.text",null);
         path.toAbsolutePath(); // C:\Users\terryrao\Documents\GitHub\.\core\test.text
         path.normalize().toAbsolutePath(); //C:\Users\terryrao\Documents\GitHub\core\test.text
         try {
@@ -33,7 +32,9 @@ public class TestPath {
         } catch (IOException e) {
             e.printStackTrace();
         }
-        System.out.println(path.toString());
+        System.out.println(path.toString());*/
+
+
 
     }
 }
