@@ -4,7 +4,10 @@ import org.junit.Test;
 import org.raowei.test.factorymethodpattern.Human;
 
 import java.text.SimpleDateFormat;
+import java.util.ArrayList;
 import java.util.Date;
+import java.util.Iterator;
+import java.util.List;
 
 import static org.junit.Assert.fail;
 
@@ -35,6 +38,31 @@ public class ClassUtilsTest {
 		Date date = new Date(1443888000000L);
 		SimpleDateFormat timeFormat = new SimpleDateFormat("yyyy-MM-dd HH:mm:ss");
 		System.out.println(timeFormat.format(date));
+	}
+
+	@Test
+	public void testDoubleIterator () {
+		List<String> names = new ArrayList<>();
+		names.add("Josh");
+		names.add("Jim");
+		List<String> address = new ArrayList<>();
+		address.add("1111");
+		address.add("2222");
+		Iterator<String> n = names.iterator();
+		Iterator<String> a = address.iterator();
+
+		while (n.hasNext() && a.hasNext()) {
+			System.out.println(n.next() + "lives at " + a.next());
+		}
+
+	}
+
+	@Test
+	public void testIncrement() {
+		int i = 0;
+		int[] a = new int[]{1,2};
+		System.out.println(a[i++]);
+		System.out.println(i);
 	}
 
 }
