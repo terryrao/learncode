@@ -2,7 +2,7 @@
   <modelVersion>4.0.0</modelVersion>
   <parent>
     <artifactId>parent</artifactId>
-    <groupId>com.raowei</groupId>
+    <groupId>link.weiqi</groupId>
     <version>0.0.1-SNAPSHOT</version>
     <relativePath>../parent/pom.xml</relativePath>
   </parent>
@@ -22,8 +22,9 @@
       <version>4.12</version>
     </dependency>
     <dependency>
-      <groupId>com.raowei</groupId>
+      <groupId>link.weiqi</groupId>
       <artifactId>core</artifactId>
+        <version>0.0.1-SNAPSHOT</version>
     </dependency>
 
     <dependency>
