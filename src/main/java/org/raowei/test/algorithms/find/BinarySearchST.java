@@ -37,7 +37,15 @@ public class BinarySearchST<Key extends Comparable<Key>, Value> extends Generate
 
     @Override
     public Value get(Key key) {
-        return null;
+        if (isEmpty()) {
+            return null;
+        }
+        int i = rank(key);
+        if (i < size && keys[i].compareTo(key) == 0) {
+            return values[i];
+        }else {
+            return null;
+        }
     }
 
     @Override
@@ -47,6 +55,9 @@ public class BinarySearchST<Key extends Comparable<Key>, Value> extends Generate
 
     @Override
     public boolean contains(Key key) {
+        if(rank(key) < size) {
+            return true;
+        }
         return false;
     }
 
@@ -70,7 +81,7 @@ public class BinarySearchST<Key extends Comparable<Key>, Value> extends Generate
 
     @Override
     public Key max() {
-        return keys[size];
+        return keys[size-1];
     }
 
     @Override
@@ -87,12 +98,12 @@ public class BinarySearchST<Key extends Comparable<Key>, Value> extends Generate
     @Override
     public int rank(Key key) {
         int lo = 0, hi = size - 1;
-        int mid = lo + (hi - lo) /2;
-        int cmp = key.compareTo(keys[mid]);
         while (lo <= hi) {
+            int mid = lo + (hi - lo) /2;
+            int cmp = key.compareTo(keys[mid]);
             if (cmp > 0) lo = mid + 1;
             if (cmp < 0) hi = mid - 1;
-            if (cmp == 0) return cmp;
+            if (cmp == 0) return mid;
         }
         return lo;
     }
