@@ -1,9 +1,5 @@
 package org.raowei.test.algorithms.sort;
 
-import com.sun.scenario.effect.Merge;
-import org.apache.commons.lang3.time.StopWatch;
-import org.raowei.test.algorithms.util.StdIn;
-
 import java.util.Arrays;
 
 /**

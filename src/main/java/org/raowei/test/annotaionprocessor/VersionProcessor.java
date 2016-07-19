@@ -13,8 +13,8 @@ import java.util.Set;
 /**
  * Created by terryrao on 5/24/2015.
  */
-@SupportedAnnotationTypes({"org.raowei.test.annotaionprocessor.annotaions.Version"})
-@SupportedSourceVersion(SourceVersion.RELEASE_8)
+//@SupportedAnnotationTypes({"org.raowei.test.annotaionprocessor.annotaions.Version"})
+//@SupportedSourceVersion(SourceVersion.RELEASE_8)
 public class VersionProcessor extends AbstractProcessor{
 
     @Override

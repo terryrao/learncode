@@ -15,7 +15,6 @@
 
 package org.raowei.test.concurrents.shareresources;
 
-import com.raowei.util.StringUtils;
 
 import java.util.HashSet;
 import java.util.Set;

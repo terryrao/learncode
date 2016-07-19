@@ -147,8 +147,8 @@ public class FisrtDegin {
      */
 
     static void assertThat(Iterable<Student> students ) {
-        find(students,s -> s.getName().equals("horance"));
-        find(students,s -> s.getAge() == 18);
+//        find(students,s -> s.getName().equals("horance"));
+//        find(students,s -> s.getAge() == 18);
     }
 
     /**
