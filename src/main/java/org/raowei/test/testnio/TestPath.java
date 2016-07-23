@@ -1,8 +1,5 @@
 package org.raowei.test.testnio;
 
-import org.apache.commons.lang3.StringUtils;
-
-import java.nio.file.FileSystems;
 import java.nio.file.Path;
 import java.nio.file.Paths;
 
@@ -12,9 +9,9 @@ import java.nio.file.Paths;
 public class TestPath {
 
     public static Path getPath(String path,String more) {
-        if (StringUtils.isBlank(more)) {
-            return FileSystems.getDefault().getPath(path);
-        }
+//        if (StringUtils.isBlank(more)) {
+//            return FileSystems.getDefault().getPath(path);
+//        }
         return Paths.get(path,more);
     }
 
