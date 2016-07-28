@@ -1,14 +1,12 @@
 package org.raowei.test.pattern.interceptor;
 
 /**
- * ${DESCRIPTION}
- * create: 2016-07-22 18:16
- *
- * @author admin
+ * @author terryrao on 2016/7/23.
  */
 public interface Interceptor {
-    void interceptBefore();
 
-    void interceptAfter();
+    void interceptorBefore();
+
+    void interceptorAfter();
 
 }
