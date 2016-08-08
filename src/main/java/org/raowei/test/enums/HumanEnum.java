@@ -1,13 +1,13 @@
 package org.raowei.test.enums;
 
-import org.raowei.test.abstractfactorypattern.BlackManHuman;
-import org.raowei.test.abstractfactorypattern.YellowFamelHuman;
-import org.raowei.test.abstractfactorypattern.YellowManHuman;
+import org.raowei.test.pattern.abstractfactorypattern.BlackManHuman;
+import org.raowei.test.pattern.abstractfactorypattern.YellowFamelHuman;
+import org.raowei.test.pattern.abstractfactorypattern.YellowManHuman;
 
 public enum HumanEnum {
 	YellowMaleHuman(YellowManHuman.class.getName()), YellowFamelHuman(YellowFamelHuman.class.getName()), BlackMaleHuman(
-			BlackManHuman.class.getName()), BlackFamelHuman("org.raowei.test.abstractfactorypattern.BlackFamelHuman"), WhiteFamelHuman(
-			BlackManHuman.class.getName()), WhiteManHuman("org.raowei.test.abstractfactorypattern.WhiteManHuman");
+			BlackManHuman.class.getName()), BlackFamelHuman("org.raowei.test.pattern.abstractfactorypattern.BlackFamelHuman"), WhiteFamelHuman(
+			BlackManHuman.class.getName()), WhiteManHuman("org.raowei.test.pattern.abstractfactorypattern.WhiteManHuman");
 
 	private String value;
 

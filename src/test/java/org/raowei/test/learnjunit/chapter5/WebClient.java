@@ -1,7 +1,5 @@
 package org.raowei.test.learnjunit.chapter5;
 
-import org.raowei.test.strategy.Content;
-
 import java.io.IOException;
 import java.io.InputStream;
 import java.net.HttpURLConnection;

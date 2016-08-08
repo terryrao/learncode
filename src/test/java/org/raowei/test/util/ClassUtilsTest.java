@@ -60,9 +60,21 @@ public class ClassUtilsTest {
 	@Test
 	public void testIncrement() {
 		int i = 0;
+		int j = 0;
 		int[] a = new int[]{1,2};
-		System.out.println(a[i++]);
-		System.out.println(i);
+		System.out.println("a[i++]" + a[i++]); //先读值，改变值
+		System.out.println("a[++j]" + a[++j]); // 先改变值，再读值
+		System.out.println("i " + i);
+		System.out.println("j " + j);
 	}
+
+	@Test
+	public void testNumberOfLeadingZeros() {
+		int i = 1;
+		System.out.println(Integer.toBinaryString(i));
+		System.out.println("数字 " + i + " 的二进制位前面有：" + Integer.numberOfLeadingZeros(i) + " 个零");
+	}
+
+
 
 }
