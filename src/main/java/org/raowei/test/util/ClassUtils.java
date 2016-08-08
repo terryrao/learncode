@@ -18,19 +18,18 @@ public class ClassUtils {
 	public static List<Class<?>> getAllClassesByInterface(Class<?> c) {
 		List<Class<?>> list = new ArrayList<Class<?>>();
 		String packageName = c.getPackage().getName();
-		List<Class<?>> allClasses = null;;
+		List<Class<?>> allClasses = null;
 
 		if (c.isInterface()) {
 			//获得该包及该包下所有的子类
 			try {
 				allClasses = getClasses(packageName);
-			} catch (ClassNotFoundException e) {
-				e.printStackTrace();
-			} catch (IOException e) {
+			} catch (ClassNotFoundException | IOException e) {
 				e.printStackTrace();
 			}
-			 //判断是不是同一个接口
-			 for (int i = 0; i < allClasses.size(); i++) {
+			//判断是不是同一个接口
+			assert allClasses != null;
+			for (int i = 0; i < allClasses.size(); i++) {
 				 if (c.isAssignableFrom(allClasses.get(i))) {
 					list.add(allClasses.get(i));
 				}

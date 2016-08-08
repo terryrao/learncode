@@ -1,7 +1,7 @@
 package org.raowei.test.util;
 
 import org.junit.Test;
-import org.raowei.test.factorymethodpattern.Human;
+import org.raowei.test.pattern.factorymethodpattern.Human;
 
 import java.text.SimpleDateFormat;
 import java.util.ArrayList;
