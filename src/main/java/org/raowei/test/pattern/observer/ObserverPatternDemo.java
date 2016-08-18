@@ -1,7 +1,5 @@
 package org.raowei.test.pattern.observer;
 
-import java.util.Observable;
-
 /**
  * ${DESCRIPTION}
  * create: 2016-07-28 17:56

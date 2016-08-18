@@ -125,6 +125,13 @@
         </dependency>
 
 
+        <!-- https://mvnrepository.com/artifact/org.ojalgo/ojalgo -->
+        <dependency>
+            <groupId>org.ojalgo</groupId>
+            <artifactId>ojalgo</artifactId>
+            <version>40.0.0</version>
+        </dependency>
+
     </dependencies>
 
 

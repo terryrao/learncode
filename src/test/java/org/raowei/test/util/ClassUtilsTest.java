@@ -1,6 +1,7 @@
 package org.raowei.test.util;
 
 import org.junit.Test;
+import org.ojalgo.finance.portfolio.MarkowitzModel;
 import org.raowei.test.pattern.factorymethodpattern.Human;
 
 import java.text.SimpleDateFormat;
@@ -75,6 +76,11 @@ public class ClassUtilsTest {
 		System.out.println("数字 " + i + " 的二进制位前面有：" + Integer.numberOfLeadingZeros(i) + " 个零");
 	}
 
+
+
+	@Test
+	public void testMarkowitzModel() {
+	}
 
 
 }
