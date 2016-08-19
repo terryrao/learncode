@@ -11,7 +11,7 @@ import java.util.concurrent.BlockingQueue;
 public class BlockingQueueTest {
 
     class basker{
-        BlockingQueue<Ball> queue
+        BlockingQueue<Ball> queue;
     }
 
 
