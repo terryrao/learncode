@@ -43,7 +43,7 @@ public class DefaultThreadPool<Job extends Runnable> implements ThreadPool<Job> 
 
     @Override
     public void addWorkers(int num) {
-        synchronized (workers) {
+        synchronized (jobs) {
 
             if (num <= 0) {
                 return;
@@ -117,7 +117,7 @@ public class DefaultThreadPool<Job extends Runnable> implements ThreadPool<Job> 
         @Override
         public void run() {
             synchronized (jobs) {
-                while (!isWork) {
+                while (isWork) {
                     while (jobs.isEmpty()) {
                         try {
                             jobs.wait();
