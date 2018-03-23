@@ -1,7 +1,5 @@
 package org.raowei.test.algorithms.find;
 
-import jdk.nashorn.internal.ir.IfNode;
-
 import java.util.ArrayList;
 import java.util.List;
 

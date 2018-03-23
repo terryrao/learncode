@@ -1,7 +1,5 @@
 package org.raowei.test.enums;
 
-import sun.applet.Main;
-
 import java.util.Random;
 
 /**

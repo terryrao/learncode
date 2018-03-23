@@ -15,8 +15,6 @@
 
 package org.raowei.test.concurrents.shareresources;
 
-import sun.applet.Main;
-
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Random;
