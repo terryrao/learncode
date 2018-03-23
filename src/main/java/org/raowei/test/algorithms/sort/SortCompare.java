@@ -3,7 +3,6 @@ package org.raowei.test.algorithms.sort;
 
 import org.raowei.test.algorithms.util.StdOut;
 import org.raowei.test.algorithms.util.StdRandom;
-import org.raowei.test.algorithms.util.Stopwatch;
 
 /**
  * Created by terryrao on 2016/4/2.

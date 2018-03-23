@@ -15,14 +15,14 @@ package org.raowei.test.algorithms.util;
  */
 
 
-public class Stopwatch {
+public class StopWatch {
 
     private final long start;
 
     /**
      * Initializes a new stopwatch.
      */
-    public Stopwatch() {
+    public StopWatch() {
         start = System.currentTimeMillis();
     }
 
@@ -51,7 +51,7 @@ public class Stopwatch {
         int n = Integer.parseInt(args[0]);
 
         // sum of square roots of integers from 1 to n using Math.sqrt(x).
-        Stopwatch timer1 = new Stopwatch();
+        StopWatch timer1 = new StopWatch();
         double sum1 = 0.0;
         for (int i = 1; i <= n; i++) {
             sum1 += Math.sqrt(i);
@@ -60,7 +60,7 @@ public class Stopwatch {
         StdOut.printf("%e (%.2f seconds)\n", sum1, time1);
 
         // sum of square roots of integers from 1 to n using Math.pow(x, 0.5).
-        Stopwatch timer2 = new Stopwatch();
+        StopWatch timer2 = new StopWatch();
         double sum2 = 0.0;
         for (int i = 1; i <= n; i++) {
             sum2 += Math.pow(i, 0.5);
