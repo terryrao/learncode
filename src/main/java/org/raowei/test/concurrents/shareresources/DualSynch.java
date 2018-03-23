@@ -20,7 +20,7 @@ package org.raowei.test.concurrents.shareresources;
  * @version 1.0 6/7/2015 9:16 PM
  */
 public class DualSynch {
-    private Object syncObject = new Object();
+    private final Object syncObject = new Object();
     public synchronized void f() {
         for(int i = 0; i < 5; i++) {
             System.out.println("f()");

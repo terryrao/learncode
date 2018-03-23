@@ -18,6 +18,7 @@ package org.raowei.test.concurrents.shareresources;
 import java.lang.invoke.MethodHandles;
 import java.util.ArrayList;
 import java.util.List;
+import java.util.concurrent.CopyOnWriteArrayList;
 import java.util.concurrent.ExecutorService;
 import java.util.concurrent.Executors;
 
@@ -36,9 +37,7 @@ public class CopyOnWriteListTest {
 
         @Override
         public void run() {
-            for (String s : list) {
-                System.out.println(s);
-            }
+            list.forEach(System.out::println);
         }
     }
 
@@ -54,7 +53,7 @@ public class CopyOnWriteListTest {
 
         @Override
         public void run() {
-//            list.remove(index);
+            list.remove(index);
             list.add(index,"write : " + index);
 
         }
@@ -69,14 +68,14 @@ public class CopyOnWriteListTest {
         }
         ExecutorService exe = Executors.newCachedThreadPool();
         for (int i = 0; i< num ; i++) {
-            exe.execute(new WriteTask(list,num));
+            exe.execute(new WriteTask(list,i));
             exe.execute(new ReadTask(list));
         }
         exe.shutdown();
     }
 
     public static void main(String[] args) {
-//        new CopyOnWriteListTest().run();
+        new CopyOnWriteListTest().run();
         Class aClass = MethodHandles.lookup().lookupClass();
         System.out.println(aClass.getName());
     }
