@@ -25,14 +25,15 @@ W/C : 等待时间与计算时间之比
 
 ### 4. 共享容器 BlockingQueue
 实现类：
-    | 实现类 | 作用
-    | --- | --- |
-    | ArrayBlockingQueue|  底层实现是数组，适合有界队列 |
-    | DelayedWorkQueue  | 延迟队列|                  |
-    | DelayQueue        | 延迟队列|
-    | LinkedBlockingQueue | 底层实现是链表，适合无界队列|
-    | PriorityBlockingQueue | 优先队列 |
-    | SynchronizedQueue | 同步队列 | 
+
+| 实现类 | 作用
+| --- | --- |
+| ArrayBlockingQueue|  底层实现是数组，适合有界队列 |
+| DelayedWorkQueue  | 延迟队列|                  |
+| DelayQueue        | 延迟队列|
+| LinkedBlockingQueue | 底层实现是链表，适合无界队列|
+| PriorityBlockingQueue | 优先队列 |
+| SynchronizedQueue | 同步队列 | 
 
 `ArrayBlockingQueue` 的`put ` 和`offer`方法都是向头部压入一个元素， `offer()` 方法，如果队列满了就会立即返回 `false`,
 `put()` 方法则会等待，只到有空会出现， `poll()` 和 `take()` 方法都是从尾部取一个元素，当队列为空时 `poll` 方法会直接返回 `null`，
