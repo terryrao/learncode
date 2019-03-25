@@ -8,6 +8,7 @@
 
     <modules>
         <module>test</module>
+        <module>concurrentbook</module>
     </modules>
 
 
