@@ -1,4 +1,4 @@
 test
 ====
 
-a test project for learnning git
+学习想着书箱时记录的代码
