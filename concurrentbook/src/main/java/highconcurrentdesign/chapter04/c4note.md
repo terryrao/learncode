@@ -74,4 +74,9 @@ AtomicIntegerFieldUpdater、AtomicLongFieldUpdater、AtomicReferenceFieldUpdater
 2. 为了确保变量被正确地读取，该属性必须是 `volatile` 的
 3. 由于 CAS 操作是对对象实例中的偏移量直接赋值，因此不支持 `static` 属性修改
 
+SynchronizedQueue
+
+当容器为0时，会阻塞 take 或者 poll 操作，当容器不为空时，会阻塞 put 或者 offer 操作
+
+使用 Jps 和 Jstack 命令可以查看是否有死锁j
 
