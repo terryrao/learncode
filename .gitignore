@@ -16,3 +16,9 @@ hs_err_pid*
 *.iml
 /.idea/
 .DS_Store
+.gitignore
+.mvn/
+mvnw
+mvnw.cmd
+pom.xml
+src/
