@@ -1,6 +1,5 @@
 package org.raowei.test.algorithms.graph;
 
-import com.sun.javafx.runtime.SystemProperties;
 import org.raowei.test.algorithms.util.In;
 
 import java.io.File;

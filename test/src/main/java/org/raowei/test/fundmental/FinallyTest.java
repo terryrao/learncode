@@ -41,11 +41,11 @@ public class FinallyTest {
         }catch(Exception e){
             --i;
             System.out.println("i in catch - form try block is"+i);
-            return --i;
+            return -3;
         }finally{
 
             System.out.println("i in finally - from try or catch block is"+i);
-            return --i;
+            return -4;
         }
     }
 }
