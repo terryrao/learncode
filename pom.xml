@@ -10,6 +10,7 @@
         <module>test</module>
         <module>concurrentbook</module>
         <module>fluxdemo</module>
+        <module>securitydemo</module>
     </modules>
 
 
